@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAlign Dashboard</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #b5ebf5;
+            color: #034b57;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .logo svg {
+            margin-right: 10px;
+        }
+
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav a {
+            color: #034b57;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #034b57;
+            color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .main .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .main .card ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M8 4.5a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1H8.5v3.5a.5.5 0 0 1-1 0V8.5H4.5a.5.5 0 0 1 0-1H8z"/>
+            </svg>
+            <span>MedAlign</span>
+        </div>
+        <nav class="nav">
+            <a href="#">Chat</a>
+            <a href="#">Reschedule</a>
+            <a href="#">To-Do</a>
+            <a href="#">Meditation</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <aside class="sidebar">
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+            </div>
+            <h2>PERSONAL INFO</h2>
+            <p>Phone Number: 123-456-7890</p>
+            <p>Address: 123 Main Street, Anytown, CA 12345</p>
+            <p>Occupation: Software Engineer</p>
+        </aside>
+
+        <section class="main">
+            <div class="card">
+                <h2>MY REWARDS</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                    <li>Cras mattis consectetur purus sit amet fermentum.</li>
+                    <li>Donec sed odio dui.</li>
+                    <li>Aenean eu leo quam.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>MY APPOINTMENTS</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                    <li>Cras mattis consectetur purus sit amet fermentum.</li>
+                    <li>Donec sed odio dui.</li>
+                    <li>Aenean eu leo quam.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
